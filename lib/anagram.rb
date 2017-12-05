@@ -8,6 +8,7 @@ class Anagram
 
   def match(anagrams)
     matches = anagrams.collect do |anagram|
+      puts "#{word} =? #{anagram}"
       %w(word).sort == %w(anagram).sort
     end
 
