@@ -8,7 +8,7 @@ class Anagram
 
   def match(anagrams)
     matches = anagrams.collect do |anagram|
-      puts "#{word} =? #{anagram}"
+      puts "#{word.split("").sort} =? #{anagram.split("").sort}"
       word.split("").sort == anagram.split("").sort
     end
 
